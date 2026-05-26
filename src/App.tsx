@@ -261,7 +261,7 @@ export default function App() {
     <div className="min-h-screen bg-neutral-50 dark:bg-neutral-950 text-neutral-800 dark:text-neutral-200 transition-colors duration-200 flex flex-col justify-between font-sans">
       
       {/* Redesenhado: Header de Alto Padrão Visual ("deixar o header com um design melhor") */}
-      <header className="border-b border-neutral-200/60 dark:border-neutral-900 bg-white/80 dark:bg-neutral-950/80 backdrop-blur-md sticky top-0 z-30 transition-all">
+      <header className="border-b border-neutral-200/60 dark:border-neutral-900 bg-white/80 dark:bg-neutral-950/80 backdrop-blur-md sticky top-0 z-30 transition-all" id="header">
         <div className="max-w-7xl mx-auto px-4 h-16 flex justify-between items-center">
           
           <div
@@ -272,10 +272,10 @@ export default function App() {
               <BookOpen className="h-5 w-5" />
             </div>
             <div className="flex flex-col">
-              <span className="text-base font-bold tracking-tight text-neutral-900 dark:text-white font-sans leading-none">
+              <span id="span" className="text-base font-bold tracking-tight text-neutral-900 dark:text-white font-sans leading-none">
                 NewStudy
               </span>
-              <span className="text-[10px] text-neutral-450 dark:text-neutral-500 font-medium font-sans">
+              <span id="span"  className="text-[10px] text-neutral-450 dark:text-neutral-500 font-medium font-sans">
                 Material Inteligente
               </span>
             </div>
@@ -342,9 +342,7 @@ export default function App() {
             )}
 
             <div className="hidden md:flex items-center">
-              <span className="text-[10px] font-mono font-bold text-brand-blue select-none bg-brand-blue/5 dark:bg-brand-blue/10 border border-brand-blue/20 rounded px-2 py-0.5 uppercase tracking-wide">
-                Estágio Acadêmico
-              </span>
+              
             </div>
           </div>
         </div>

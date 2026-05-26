@@ -116,9 +116,10 @@ export default function Dashboard({
   );
 
   return (
+    
     <div className="max-w-7xl mx-auto px-4 py-8 lg:py-12 font-sans" id="dashboard-container">
       {/* Seção Principal / Hero */}
-      <div className="text-center mb-12 lg:mb-16">
+      <div className="text-center mb-12 lg:mb-16" id="hero-section">
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -128,13 +129,13 @@ export default function Dashboard({
           <span>Estruturador de Estudos Inteligente</span>
         </motion.div>
         
-        <motion.h1
+        <motion.h1 
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
           className="text-4xl lg:text-5xl font-extrabold tracking-tight text-neutral-900 dark:text-neutral-50 mb-4 font-sans"
-        >
-          Seu conteúdo, agora mastigado.
+       id="dashboard-title" >
+          Sua aula, seu estudo, nossa entrega.
         </motion.h1>
         
         <motion.p
@@ -145,17 +146,11 @@ export default function Dashboard({
         >
           Cole aulas gravadas, seminários científicos ou lives acadêmicas do YouTube para convertê-los em apostilas dinâmicas, fórmulas comprovadas e flashcards inteligentes em segundos.
         </motion.p>
+        
       </div>
 
       {/* Carrossel de Apresentação de Mídia e Supabase */}
-      <motion.div
-        initial={{ opacity: 0, y: 15 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.3 }}
-        className="mb-10 lg:mb-14"
-      >
-        <PromoCarousel />
-      </motion.div>
+    
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
         
@@ -169,7 +164,7 @@ export default function Dashboard({
         >
           <div>
             <h2 className="text-lg font-bold tracking-tight text-neutral-900 dark:text-neutral-100 flex items-center gap-2">
-              <Youtube className="h-5 w-5 text-red-500 fill-red-500" />
+              
               <span>Importar Aula do YouTube</span>
             </h2>
             <p className="text-xs text-neutral-400 dark:text-neutral-500 mt-1 font-mono">
@@ -343,7 +338,7 @@ export default function Dashboard({
           
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             <div>
-              <h2 className="text-lg font-bold text-neutral-900 dark:text-neutral-150 flex items-center gap-2 font-sans">
+              <h2 className="text-lg font-bold text-neutral-900 dark:text-neutral-150 flex items-center gap-2 font-sans ">
                 <BookOpen className="h-5 w-5 text-neutral-700 dark:text-neutral-300" />
                 <span>Seu Deck de Estudo</span>
                 <span className="text-xs bg-neutral-150 dark:bg-neutral-850 text-neutral-600 dark:text-neutral-450 border dark:border-neutral-750 px-2.5 py-0.5 rounded-full font-mono font-medium">
